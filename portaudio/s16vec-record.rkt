@@ -53,4 +53,6 @@
   ;;   (when (pa-stream-active? stream)
   ;;     (sleep 0.4)
   ;;     (loop)))
+  (pa-close-stream stream)
   (extract-recorded-sound copying-info))
+
